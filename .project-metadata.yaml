@@ -24,7 +24,7 @@ tasks:
 
   - type: run_session
     name: train model and log params
-    script: experiments/experiment_mlflow
+    script: experiments/experiment_mlflow.py
     short_summary: train lineal model 
     long_summary: first training and creation of experiment for tracking
     kernel: python3

@@ -39,3 +39,12 @@ tasks:
     kernel: python3
     cpu: 2
     memory: 4
+  
+  - type: run_session
+    name: dowload run artifacts(models)
+    script: models/get_mlflow_run_query_based.py
+    short_summary: get model from run 
+    long_summary: get model from run base on some metric
+    kernel: python3
+    cpu: 2
+    memory: 4 

@@ -13,6 +13,15 @@ runtimes:
     edition: Standard
 
 tasks:
+ - type: run_session
+    name: prepare enviroment
+    script: 00-prepare-steps/prepare_steps.py
+    short_summary: create project structure 
+    long_summary: creates project structures, and any prepare steps
+    kernel: python3
+    cpu: 1
+    memory: 2
+
   - type: run_session
     name: run a test
     script: experiments/test.py

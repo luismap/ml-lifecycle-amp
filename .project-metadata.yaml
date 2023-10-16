@@ -58,6 +58,12 @@ tasks:
     cpu: 2
     memory: 4
 
+  - type: create_model
+    name: create the model
+    entity_label: lineal-model
+    description: tbe
+    short_summary: tbe 
+
   - type: build_model
     entity_label: lineal-model
     comment: Some comment about the model

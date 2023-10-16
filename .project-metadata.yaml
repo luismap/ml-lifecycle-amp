@@ -56,4 +56,22 @@ tasks:
     long_summary: get model from run base on some metric
     kernel: python3
     cpu: 2
-    memory: 4 
+    memory: 4
+
+  - type: build_model
+    entity_label: lineal-model
+    comment: Some comment about the model
+    examples:
+      - request:
+          dep_delay: 43
+        response: 
+          pred_arr_delay: 38
+    target_file_path: models/model.py
+    target_function_name: pred_arr_delay
+    kernel: python3
+    resources:
+      cpu: 1
+      memory: 2
+    replication_policy:
+      type: fixed
+      num_replicas: 1

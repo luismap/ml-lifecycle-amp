@@ -23,6 +23,15 @@ tasks:
     memory: 2
 
   - type: run_session
+    name: install dependencies
+    script: 01-install-dep/install_dep.py
+    short_summary: install dependencies
+    long_summary: install dependencies for the current project 
+    kernel: python3
+    cpu: 2
+    memory: 4
+
+  - type: run_session
     name: train model and log params
     script: experiments/experiment_mlflow.py
     short_summary: train lineal model 

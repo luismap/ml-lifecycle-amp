@@ -61,8 +61,8 @@ tasks:
   - type: create_model
     name: create the model
     entity_label: lineal-model
-    description: tbe
-    short_summary: tbe 
+    description: create model step
+    short_summary: creates the model entry definitions
 
   - type: build_model
     entity_label: lineal-model
@@ -75,3 +75,6 @@ tasks:
     target_file_path: models/model.py
     target_function_name: pred_arr_delay
     kernel: python3
+
+  - type: deploy_model
+    entity_label: lineal-model 

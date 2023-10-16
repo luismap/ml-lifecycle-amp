@@ -69,9 +69,3 @@ tasks:
     target_file_path: models/model.py
     target_function_name: pred_arr_delay
     kernel: python3
-    resources:
-      cpu: 1
-      memory: 2
-    replication_policy:
-      type: fixed
-      num_replicas: 1

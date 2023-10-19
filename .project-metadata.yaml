@@ -41,13 +41,30 @@ tasks:
     memory: 4
 
   - type: run_session
-    name: train model and log params
+    name: base line run
     script: experiments/experiment_mlflow.py
     short_summary: train lineal model 
-    long_summary: first training and creation of experiment for tracking
+    long_summary: first baseline run
     kernel: python3
     cpu: 2
     memory: 4
+
+  - type: create_job
+    name: train model and log params
+    entity_label: train_lineal
+    script: experiments/experiment_mlflow.py
+    arguments: true 1000
+    short_summary: train lineal model job 
+    long_summary: >-
+      job for executing different training sessions.
+      accepts arguments <intercept: boolean, cap_departure_dely: int>
+    kernel: python3
+    cpu: 2
+    memory: 4
+
+  - type: run_job
+    entity_label: train_lineal
+    short_summary: Running train and model
   
   - type: run_session
     name: dowload run artifacts(models)

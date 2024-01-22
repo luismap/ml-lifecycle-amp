@@ -1,6 +1,7 @@
 name: lineal-amp
 description: |
-  this is a test amp to see how to approach amp development
+  Demo amp to see how to approach amp development. It goes through the different
+  tools CML has to help Data teams to do MLOps.
 
 author: luis
 specification_version: 1.0
@@ -66,11 +67,23 @@ tasks:
     entity_label: train_lineal
     short_summary: Running train and model
   
-  - type: run_session
+  - type: create_job
     name: dowload run artifacts(models)
+    entity_label: dowload_lineal_artifacts
     script: models/get_mlflow_run_query_based.py
     short_summary: get model from run 
     long_summary: get model from run base on some metric
+    kernel: python3
+    cpu: 1
+    memory: 1
+
+  - type: run_job
+    entity_label: dowload_lineal_artifacts
+    short_summary: dowload lineal artifacts
+  
+  - type: run_session
+    name: dowload run artifacts(models)
+    
     kernel: python3
     cpu: 2
     memory: 4
@@ -83,7 +96,7 @@ tasks:
 
   - type: build_model
     entity_label: lineal-model
-    comment: Some comment about the model
+    comment: Build lineal model to be used for inference
     examples:
       - request:
           dep_delay: 43

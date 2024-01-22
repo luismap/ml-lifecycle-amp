@@ -4,7 +4,7 @@
 This project constitutes a presentation of the different components
 that CML provides for Data teams to be able to do MLOps using cloudera CDP
 
-This project will installs a theoratically flight delay predictor machine learning model. It will use:
+This project will installs a theoretically flight delay predictor machine learning lineal model. It will use:
 * sessions
 * jobs
 * experiments
@@ -13,5 +13,5 @@ This project will installs a theoratically flight delay predictor machine learni
 
 # Project setup and walkthrough
 
-1. Create internal dependecies (folder structure)
+1. Create internal dependecies (folder structure for deploying models)
 2. 

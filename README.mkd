@@ -9,9 +9,60 @@ This project will installs a theoretically flight delay predictor machine learni
 * jobs
 * experiments
 * models
-* applications
+* applications (tbd)
 
-# Project setup and walkthrough
+# Project setup
 
-1. Create internal dependecies (folder structure for deploying models)
-2. 
+1. Add AMP to your CML env
+![Alt text](images/amp_cml.png)
+
+2. configure project from the amp section
+![Alt text](images/configure.png)
+
+3. Launch project and check on AMP steps
+![Alt text](images/launch.png)
+
+# Amp Walkthrough
+Once the project has been configure, the amp will execute the following steps.
+
+1. Create internal dependencies (folder structure for deploying models)
+![Alt text](images/1_step.png)
+
+2. Check that sessions runs
+![Alt text](images/2_step.png)
+
+3. Install project dependencies
+![Alt text](images/3_dependencies.png)
+
+4. Train a baseline lineal model
+![Alt text](images/4_train.png)
+
+5. Create a CML job that can be use for iterative model training
+![Alt text](images/5_iter_train.png)
+
+6. Execute the job create in step 5
+![Alt text](images/6_run_job.png)
+
+7. Create job get best model run base on R_squared test metric
+![Alt text](images/7_best_model.png)
+
+8. Run job for getting best model
+![Alt text](images/8_run_best_model.png)
+
+9. Create CML model serving endpoint definition
+![Alt text](images/9_model_endpoint_def.png)
+
+10. Build model from step 9
+![Alt text](images/10_build_model.png)
+
+11. Deploy model
+![Alt text](images/11_deploy_model.png)
+
+# If no failures were encountered, we should have an overview page view similar to the following
+
+![Alt text](images/overview.png)
+
+It will show.
+* one model running a inference endpoint
+* two jobs that can be triggered for testing MLOps functionality
+* application uses the model endpoint (TBD)

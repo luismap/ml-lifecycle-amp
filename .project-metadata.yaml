@@ -81,13 +81,6 @@ tasks:
     entity_label: dowload_lineal_artifacts
     short_summary: dowload lineal artifacts
   
-  - type: run_session
-    name: dowload run artifacts(models)
-    
-    kernel: python3
-    cpu: 2
-    memory: 4
-
   - type: create_model
     name: create the model
     entity_label: lineal-model

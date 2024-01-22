@@ -1,0 +1,17 @@
+# An overview of MLOps with CML
+![Alt text](images/logo.png)
+
+This project constitutes a presentation of the different components
+that CML provides for Data teams to be able to do MLOps using cloudera CDP
+
+This project will installs a theoratically flight delay predictor machine learning model. It will use:
+* sessions
+* jobs
+* experiments
+* models
+* applications
+
+# Project setup and walkthrough
+
+1. Create internal dependecies (folder structure)
+2. 

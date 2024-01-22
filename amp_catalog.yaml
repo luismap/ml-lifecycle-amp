@@ -8,7 +8,7 @@ entries:
     long_description: |
         creates a lineal model hello world expanded
     image_path: >-
-        https://github.com/luismap/genai/main/images/logo.png
+        https://github.com/luismap/lineal-amp/main/images/logo.png
     tags:
       - lineal
       - test

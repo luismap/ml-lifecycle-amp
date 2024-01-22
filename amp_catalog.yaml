@@ -1,12 +1,13 @@
 name: Luis
 
 entries:
-  - title: Lineal
+  - title: CML MLOps showcase with Lineal model
     label: lineal-amp
     short_description: |
-        creates a lineal model hello world
+        creates a lineal model
     long_description: |
-        creates a lineal model hello world expanded
+        creates a lineal model that showcases the different components
+        that cml has for doing MLOps
     image_path: >-
         https://raw.githubusercontent.com/luismap/lineal-amp/main/images/logo.png
     tags:

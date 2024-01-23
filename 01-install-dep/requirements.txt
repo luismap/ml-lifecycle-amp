@@ -1,5 +1,4 @@
 pandas
 joblib 
 scikit-learn
-streamlit==1.28.1
 requests

@@ -1,5 +1,6 @@
 !pip install --upgrade pip
 !pip install --no-cache-dir --log install-deps-logs/pip-req.log -r 01-install-dep/requirements.txt
+!pip install -I -r 01-install-dep/requirements_sl.txt
 import os
 #get domain and package location
 domain = os.environ["CDSW_DOMAIN"]

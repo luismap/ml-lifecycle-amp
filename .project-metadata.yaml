@@ -101,3 +101,14 @@ tasks:
 
   - type: deploy_model
     entity_label: lineal-model 
+  
+  - type: start_application
+    name: Lineal Predictor
+    subdomain: lineal
+    script: apps/app_entrypoint.py
+    short_summary: An app to showcase a lineal predictor 
+    long_summary: App that will do some processing using the deployed model
+    cpu: 2
+    memory: 8
+    environment_variables:
+      TASK_TYPE: START_APPLICATION

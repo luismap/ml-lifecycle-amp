@@ -1,0 +1,1 @@
+!python3.9 -m streamlit run apps/lineal_app.py --server.address=127.0.0.1 --server.port=$CDSW_APP_PORT

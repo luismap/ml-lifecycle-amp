@@ -15,7 +15,7 @@ This project will installs a theoretically flight delay predictor machine learni
 
 1. Add a few environment variables
 * cml_api_key: #create a cml api key, and add it as an env var
-* project_name: #the format should be "<amp-title> - yourname"
+* project_name: #the format should be "amp-title - yourname"
 ex. "CML MLOps showcase with Lineal model - john.doe"
 ![Alt text](images/env_vars.png)
 
